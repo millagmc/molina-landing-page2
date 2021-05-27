@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding:0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -143,11 +144,16 @@ header{
     color:rgb(75, 69, 69) ;
 }
 
+#contatos {
+background-color: antiquewhite;
+}
+
 
 #contato {
     display: flex;
     text-align: justify center;
     padding: 50px;
+    background-color: antiquewhite;
 }
 
 a {
