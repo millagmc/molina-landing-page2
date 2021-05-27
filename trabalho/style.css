@@ -2,7 +2,8 @@
 
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 html {
@@ -103,6 +104,7 @@ header{
     text-align: center;
     flex-flow: column;
     background-color: antiquewhite;
+    font-family: "Poppins";
 }
 .texto h1{
     padding-top: 10px;
@@ -158,7 +160,7 @@ background-color: antiquewhite;
 
 a {
     text-decoration: none;
-    color: rgb(75, 69, 69);
+    color: rgb(163, 100, 48);
 }
 
 
