@@ -222,3 +222,22 @@ button{
     font-weight: 700!important;
     color: #000000;
 }
+
+/* Footer */
+
+.footer {
+    height: 60px;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer nav {
+    width: 40%;
+}
+.footer nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
