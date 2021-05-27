@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    height: 80px;
+    width: 100%;
+    display:flex;
+    background-color: black;
+    justify-content: space-between;
+}
+#logo img{
+    height: 70px;
+    width: 180px;
+}
+.navegacao{
+    display: flex;
+    color: aliceblue;
+    text-decoration: none;
+}
+.navegacao ul {
+    display: flex;
+}
+.navegacao ul li {
+    text-decoration: none;
+    display: flex;
+}
