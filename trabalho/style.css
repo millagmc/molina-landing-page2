@@ -8,13 +8,14 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden
 }
 
 /* Sobre nós */
 
 #sobre {
     display: flex;
-    background-color: antiquewhite;
+    background-color: #ddd;
 }
 
 /* Cabeçalho */
@@ -125,6 +126,8 @@ header{
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
 }
 
 .texto p {
@@ -135,18 +138,37 @@ header{
 
 
 
-
-
-
-/* Contato */
-
-/* Cabeçalho */
-
-
-
 /* Body */
 
+#trabalhe {
+font-family: "Poppins";
+    text-align: center;
+    padding: 100px 85px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#3b3937,rgb(43, 42, 41));
+    color: #fff;
+}
 
+#trabalhe h1 {
+    color: #ffffff;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+}
+#trabalhe h3 {
+    color: rgb(236, 233, 233);
+}
+
+#trabalhe p  {
+    color: rgb(255, 255, 255);
+}
+
+#trabalhe button {
+    width: 100%;
+    border-radius: 10px #ddd;
+    color: black;
+    background-color: #eee;
+    margin-top: 30px;
+}
 .lado h1, span {
     font-weight: 700!important;
     color: #000000;
@@ -160,7 +182,7 @@ header{
 }
 
 #contatos {
-background-color: #ece8e5;
+background-color: #ddd;
 }
 
 
@@ -168,7 +190,7 @@ background-color: #ece8e5;
     display: flex;
     text-align: justify center;
     padding: 50px;
-    background-color: #ece8e5;
+    background-color: #ddd;
 }
 
 a {
