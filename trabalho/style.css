@@ -12,6 +12,11 @@ html {
 
 /* Sobre nós */
 
+#sobre {
+    display: flex;
+    background-color: antiquewhite;
+}
+
 /* Cabeçalho */
 
 header{
@@ -64,6 +69,7 @@ header{
     width:20%;
     float: left;
     height: 100%;
+    object-fit: cover;
 }
 @keyframes slider {
     0%{
@@ -97,20 +103,27 @@ header{
 
 /* Main texto do corpo */
 
+.imagem {
+    padding: 150px;
+}
+.imagem img {
+    width: 300px;
+}
+
 .texto{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-flow: column;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     font-family: "Poppins";
+    padding: 20px 100px;
 }
 .texto h1{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    border: black solid 2px;
     width: 100%;
 }
 
@@ -147,7 +160,7 @@ header{
 }
 
 #contatos {
-background-color: antiquewhite;
+background-color: #ece8e5;
 }
 
 
@@ -155,7 +168,7 @@ background-color: antiquewhite;
     display: flex;
     text-align: justify center;
     padding: 50px;
-    background-color: antiquewhite;
+    background-color: #ece8e5;
 }
 
 a {
