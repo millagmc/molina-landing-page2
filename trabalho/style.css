@@ -1,0 +1,262 @@
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sobre nós */
+
+#sobre {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+/* Cabeçalho */
+
+header{
+    height: 80px;
+    width: 100%;
+    display:flex;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logo img{
+    height: 70px;
+    width: 180px;
+    object-fit: cover
+}
+.navegacao{
+    display: flex;
+    color: aliceblue;
+    text-decoration: none;
+}
+.navegacao ul {
+    display: flex;
+}
+.navegacao ul li {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    padding-right: 10px;
+    align-items: center;
+}
+.navegacao ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Slider */
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left:0;
+    animation: 20s slider infinite;
+    height: 600px;
+}
+#slider figure img {
+    width:20%;
+    float: left;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    70%{
+        left:-200%
+    }
+    75%{
+        left:-300%
+    }
+    95%{
+        left: -300%
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+/* Main texto do corpo */
+
+.imagem {
+    padding: 150px;
+}
+.imagem img {
+    width: 300px;
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    /* background-color: antiquewhite; */
+    font-family: "Poppins";
+    padding: 20px 100px;
+}
+.texto h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.texto p {
+    text-align: justify;
+    padding: 20px 20px;
+    font-size: 19px;
+}
+
+
+
+
+
+
+/* Contato */
+
+/* Cabeçalho */
+
+
+
+/* Body */
+
+
+.lado h1, span {
+    font-weight: 700!important;
+    color: #000000;
+
+}
+
+.paragrafo {
+    margin: 10px 0 20px 0;
+    text-align: justify;
+    color:rgb(75, 69, 69) ;
+}
+
+#contatos {
+background-color: #ece8e5;
+}
+
+
+#contato {
+    display: flex;
+    text-align: justify center;
+    padding: 50px;
+    background-color: #ece8e5;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(163, 100, 48);
+}
+
+
+input {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 38px;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+
+textarea{
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 80px;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+
+main{
+    padding: 60px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+img {
+    width: 500px;
+    float: left;
+}
+
+.label {
+    
+    font-weight: 700!important;
+    display: block;
+    text-align: center;
+}
+.label::after {
+    content: " * ";
+    color: red;
+}
+button{
+    display: grid;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 1em;
+    padding: 10px 15px;
+    margin: auto;
+}
+
+#mensagem {
+    clear: auto;
+}
+
+#mensagem h1 {
+    text-align: center;
+    font-weight: 700!important;
+    color: #000000;
+}
+
+/* Footer */
+
+.footer {
+    height: 60px;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer nav {
+    width: 40%;
+}
+.footer nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-device-width: 320) and (max-device-width:420px){
+   
+}
