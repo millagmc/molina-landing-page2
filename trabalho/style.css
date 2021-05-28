@@ -258,16 +258,21 @@ button{
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width:420px){
-    header{
+    header {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         height: fit-content;
     }
+    #logo{
+        display: flex;
+        justify-content: center;
+    }
     #logo img {
+       height: 80%;
+       width: 80%;
+   }
+   .navegacao{
        display: flex;
-       flex-flow: column;
-       height: 100%;
-       width: 100%;
    }
    .navegacao ul li {
        display: flex;
