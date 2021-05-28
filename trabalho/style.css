@@ -103,11 +103,12 @@ header{
 
 /* Main texto do corpo */
 
-.imagem {
-    padding: 150px;
+#sobre{
+    display: flex;
 }
 .imagem img {
     width: 300px;
+    display: flex;
 }
 
 .texto{
@@ -118,7 +119,6 @@ header{
     flex-flow: column;
     /* background-color: antiquewhite; */
     font-family: "Poppins";
-    padding: 20px 100px;
 }
 .texto h1{
     padding-top: 10px;
@@ -256,7 +256,12 @@ button{
     display: flex;
     justify-content: space-evenly;
 }
-
-@media screen and (min-device-width: 320) and (max-device-width:420px){
+/* tela celular*/
+@media screen and (min-device-width: 320px) and (max-device-width:420px){
+  #sobre{
+      display: flex;
+      flex-flow: row;
+      height: fit-content;
+  }
    
 }
