@@ -1,5 +1,3 @@
-/* Geral */
-
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +6,14 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden
 }
 
 /* Sobre nós */
 
 #sobre {
     display: flex;
-    background-color: antiquewhite;
+    background-color: #ddd;
 }
 
 /* Cabeçalho */
@@ -103,15 +102,14 @@ header{
 
 /* Main texto do corpo */
 
-#sobre{
-    display: flex;
+.imagem {
+    padding: 150px;
 }
 .imagem img {
     width: 300px;
-    display: flex;
 }
 
-.texto{
+.texto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,12 +117,16 @@ header{
     flex-flow: column;
     /* background-color: antiquewhite; */
     font-family: "Poppins";
+    padding: 20px 100px;
 }
+
 .texto h1{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
 }
 
 .texto p {
@@ -132,21 +134,84 @@ header{
     padding: 20px 20px;
     font-size: 19px;
 }
+/* Para voce */
+
+#produtos h1 {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+}
+
+.para-voce {
+    width: 50px;
+    display: flex;
+
+}
+#produtos {
+    display: flex;
+    flex-direction: column;
+
+}
+.produtos-flex {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.quadrado {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 2px 8px -2px rgba(34, 34, 34, 0.4);
+    -moz-box-shadow: 0px 2px 8px -2px rgba(34, 34, 34, 0.4);
+    box-shadow: 0px 2px 8px -2px rgba(34, 34, 34, 0.4);
+    border: 1px solid #767676;
+    padding: 0.7rem 0.9rem;
+    min-height: 8rem;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 10px;
+    
+}
 
 
 
-
-
-
-/* Contato */
-
-/* Cabeçalho */
+#produtos h5 {
+    display: flex;
+}
 
 
 
 /* Body */
 
+#trabalhe {
+font-family: "Poppins";
+    text-align: center;
+    padding: 100px 85px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#3b3937,rgb(43, 42, 41));
+    color: #fff;
+}
 
+#trabalhe h1 {
+    color: #ffffff;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+}
+#trabalhe h3 {
+    color: rgb(236, 233, 233);
+}
+
+#trabalhe p  {
+    color: rgb(255, 255, 255);
+}
+
+#trabalhe button {
+    width: 100%;
+    border-radius: 10px #ddd;
+    color: black;
+    background-color: #eee;
+    margin-top: 30px;
+}
 .lado h1, span {
     font-weight: 700!important;
     color: #000000;
@@ -160,15 +225,16 @@ header{
 }
 
 #contatos {
-background-color: #ece8e5;
-}
 
+background-color: #ddd;
+}
 
 #contato {
     display: flex;
+    flex-direction: row;
     text-align: justify center;
     padding: 50px;
-    background-color: #ece8e5;
+    background-color: #ddd;
 }
 
 a {
@@ -201,6 +267,9 @@ main{
     padding: 60px;
     font-family: "Poppins", sans-serif;
 
+}
+#main {
+    background-color: #ddd;
 }
 
 img {
@@ -237,6 +306,76 @@ button{
     font-weight: 700!important;
     color: #000000;
 }
+/* produtos */
+.produtos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+.produtos h1{
+    text-align: center;
+    
+}
+
+@media screen and (max-width:780px) {
+    #contato {
+        flex-direction: column;
+        padding: 0%;
+    }
+    #main {
+        padding: 0;
+        background-color: #ddd;
+
+    }
+    .img {
+        width: 250px;
+        display: flex;
+        margin-left: 90px;
+    }
+    #contato h1 {
+        margin-left: 30px;
+    }
+
+    .paragrafo {
+        text-align: justify;
+        margin: 20px;
+    }
+    strong {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #mensagem {
+        margin-top: 20px;
+        padding: 1%;
+        background-color: #ddd;
+    }
+    input {
+        width: 300px;
+    }
+    textarea {
+        width: 300px;
+    }
+    #contato button {
+        display: flex;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 
@@ -256,12 +395,95 @@ button{
     display: flex;
     justify-content: space-evenly;
 }
-/* tela celular*/
-@media screen and (min-device-width: 320px) and (max-device-width:420px){
-  #sobre{
-      display: flex;
-      flex-flow: row;
-      height: fit-content;
-  }
-   
+
+@media screen and (min-device-width: 320px) and (max-device-width:800px){
+    header {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    #logo{
+        display: flex;
+        justify-content: center;
+    }
+    
+   .navegacao{
+       display: flex;
+   }
+   .navegacao ul li {
+       display: flex;
+       flex-flow: column;
+       padding-bottom: 8px;
+   }
+   #sobre{
+       display: flex;
+       flex-direction: column;
+       height: fit-content;
+       justify-content: center;
+       text-align: center;
+   }
+   .imagem{
+       display: flex;
+       justify-content: center;
+       padding: 10px;
+   }
+   .imagem img{
+       padding-top: 10px;
+       height: 50%;
+       width: 50%;  }
+       
+    .texto{
+        padding: 10px;
+    }
+    #produtos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;}
+     .produtos-flex{
+            display: flex;
+            flex-direction: column;
+     }
+       /*parte de contato*/
+       
+       #contatos{
+        display: flex;
+        flex-direction: column;}
+    
+        .img{
+            display: flex;
+            flex-direction: column;
+        }
+        .img img{
+            height: 100%;
+            width: fit-content;
+        }
+        #esse-texto{
+            display: flex;
+            flex-direction: column;
+        }
+        #esse-texto h1{
+            text-align: center;
+        }
 }
+/*
+@media screen and (min-device-width: 421px) and (max-device-width:800px){
+    header{
+        height: 100px;
+        display: flex;
+        flex-flow: column;
+    }
+    #logo{
+        margin: 0 auto;
+    }
+    #logo img {
+       height: 60px;
+       width: 150px;
+       text-align: center;
+   }
+   .navegacao ul li {
+       display: flex;
+       flex-flow: column;
+       padding-bottom: 8px;
+   } ate aqui fui bem
+   */
+  
